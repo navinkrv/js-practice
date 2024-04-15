@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Loops</title>
+	</head>
+	<body>
+		<script>
+			// loop
+			// 1. for
+			// 2. map filter and reduce ( loop in an array)
+
+			/*
+                    i = 1;
+               for ( initialisation; contdition; increament){
+                code;
+               }
+               
+               for (let i = 0; i < 5; i++) {
+                   console.log(i);
+               }
+
+to print all even numbers between 1 to 100
+for (let i = 2; i <= 100; i = i + 2) {
+    console.log(i);
+}
+
+to print all odd numnber between 1 to 100
+to print multiple tables of 2 
+to print hello 20 times
+to print  A to Z alphabets ( HINT : ASCII table ) 
+to print ascii values for  A to Z alphabets ( HINT : ASCII table ) 
+
+			 array : collection all of data
+			 
+	 
+                */
+			let a = [1, 32, 3, 4, 5, 6, 5435, 65, 76, 6, 7];
+
+			// let b = ["navin", 23, {}, undefined, true];
+			console.log(a);
+			// accessing element  in array
+			// console.log("array element : " + b[0]);
+
+			// Traversing  in array
+			// for (let i = 0; i <= a.length - 1; i = i + 1) {
+			// 	console.log("array element : " + a[i]);
+
+			// }
+
+			/*
+			array handling functions
+
+			1. arr.length - find length of an array
+			*/
+			console.log("length = ", a.length);
+
+			// 2. Reverse an araay
+			// console.log("reversed array : ", a.reverse());
+			console.log("reversed array : ", a.toReversed());
+			// console.log(a);
+
+			// 3. slice of an array
+			// console.log("slice", a.slice(2, 6));
+
+			// 4. map - to traverse in an array and return a new copy of array
+
+			// STRING
+			console.log("######## STRINGS #######");
+			let str = "this is string";
+			console.log("String : ", str);
+
+			// Funcitons
+			// length of string
+			console.log("length : ", str.length);
+
+			//  Replace
+			console.log("replaced : " + str.replace("this", "I"));
+
+			// Reverse
+			console.log("reversed : " + str.split("").toReversed().join(""));
+			console.log("reversed : " + str.split(" ").join(" "));
+
+			console.log("Ticket Booking".toLowerCase().replace(" ", "-"));
+		</script>
+	</body>
+</html>
